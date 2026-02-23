@@ -4,7 +4,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 using std::string;
-void name_present()//Ãû×Ö´ø¿òàÅàÅ
+void name_present()//åå­—å¸¦æ¡†
 {
 	cout << "your naem: ";
 	string name;
@@ -35,7 +35,7 @@ void name_present()//Ãû×Ö´ø¿òàÅàÅ
 		cout << endl;
 	}
 }
-void triangle_1(int n)//¿¿×ó±ßµÄÈı½ÇĞÎ
+void triangle_1(int n)//é å·¦ä¸‰è§’å½¢
 {
 	cout << endl;
 	for(int r=1;r<=n;r++)
@@ -49,7 +49,7 @@ void triangle_1(int n)//¿¿×ó±ßµÄÈı½ÇĞÎ
 		cout << endl;
 	}
 }
-void triangle_2(int n)//¿¿ÓÒ±ß
+void triangle_2(int n)//é å³
 {
 	cout << endl;
 	for (int r = 1; r <= n; ++r)
@@ -65,7 +65,7 @@ void triangle_2(int n)//¿¿ÓÒ±ß
 		cout << endl;
 	}
 }
-void triangle_3(int n)//µÈÑü
+void triangle_3(int n)//ç­‰è…°
 {
 	for (int r = 1; r <= n; r++)
 	{
@@ -91,3 +91,4 @@ int main()
 	triangle_3(n);
 	return 0;
 }
+
