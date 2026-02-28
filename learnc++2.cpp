@@ -29,7 +29,7 @@ int main()
 	{
 		cout << "error";
 	}
-	cin.clear();
+	cin.clear();//for clear the "ctrl+z"
 	streamsize prec = cout.precision();
 	cout << setprecision(3) << 0.2 * midterm + 0.4 * final + 0.4 * sum / count << setprecision(prec) << endl;
 
@@ -55,3 +55,4 @@ int main()
 
 	return 0;
 }
+
