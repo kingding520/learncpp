@@ -3,11 +3,9 @@
 #include<vector>
 #include<algorithm>
 #include<stdexcept>
-#include <cstdlib>
-#include <ctime>
 
 using namespace std;
-int median(vector<double> vec)
+double median(vector<double> vec)//find the median
 {
     typedef vector<double>::size_type vec_typ;
     vec_typ size=vec.size();
@@ -19,14 +17,33 @@ int median(vector<double> vec)
     vec_typ mid=size/2;
     return size%2==0?(vec[mid]+vec[mid-1])/2:vec[mid];
 }
+istream& read_hw(istream& in, vector<double>& hw)//read homework
+{
+    if(in)
+    {
+        double x;
+        hw.clear();//clear the formal vector
+        while(in>>x){
+            hw.push_back(x);
+        }
+        in.clear();//clear stream for available for the next
+    }
+    return in;
+}
 int main()
 {
     int v=10;
     vector<double> vec;
-    srand(time(0));
-    for(int i=0;i!=10;++i)
-    {
-        vec.push_back(rand()%100);
+    vector<double> homework;
+    read_hw(cin,homework);
+    double hw=median(homework);
+    try{
+        int final=90,midscore=90;
+        streamsize prec=cout.precision();
+        cout << setprecision(3) << 0.2 * hw + 0.4 * final + 0.4 * midscore << setprecision(prec) << endl;
+    }catch(domain_error){
+        cout<<"error"<<endl;
+        return 1;
     }
-    int mid=median(vec);
+    return 0;
 }
