@@ -1,0 +1,25 @@
+*.exe
+*.obj
+*.out
+
+# 忽略日志
+*.log
+
+# 忽略临时文件
+*.tmp
+
+# 忽略文件夹
+build/
+bin/
+
+.vs/
+Debug/
+Release/
+*.suo
+.vscode/
+.vscode/
+*.ilk
+*.pdb
+*.exe
+*.obj
+*.log
