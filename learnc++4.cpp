@@ -40,7 +40,7 @@ istream& read(istream& in,student& s)
 
 int main()
 {
-<<<<<<< HEAD
+
     typedef struct student s;
     vector<student> students;
     s record;
@@ -56,7 +56,7 @@ int main()
             <<string(maxlen+1-students[i].name.size(),' ');
     }
 
-=======
+
     vector<student> students;
     student record;
     string::size_type maxlen =0;
@@ -82,6 +82,6 @@ int main()
             cout<<e.what()<<endl;
         }
     }
->>>>>>> 32a8d41 (3/8/2026)
+
     return 0;
 }
