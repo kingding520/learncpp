@@ -6,7 +6,7 @@ using std::endl;
 using std::string;
 void name_present()//名字带框
 {
-	cout << "your naem: ";
+	cout << "your name: ";
 	string name;
 	cin >> name;
 	const string greeting = "Hello, " + name + "!";
