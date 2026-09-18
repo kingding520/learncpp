@@ -41,6 +41,7 @@ int main()
     void (Animal::*p)() = &Animal::makeSound;
     (c.*p)();   // 输出 Meow!（因为是虚函数，走动态绑定）
     void*vptr=nullptr;
-    cout<<memcpy(&vptr,&c,sizeof(void*))<<endl;
+    memcpy(&vptr,&c,sizeof(void*));
+    cout<<vptr<<endl;//对于有虚函数的类，vptr 位于对象内存布局的开头
     return 0;
 }
